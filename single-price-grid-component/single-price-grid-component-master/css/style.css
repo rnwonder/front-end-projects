@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background: url('https://images.squarespace-cdn.com/content/v1/5e3df529e62a4b505407594a/1581122773911-D9O3BIZV41V9GAB7Y1RT/ke17ZwdGBToddI8pDm48kJwf8an17thCpI4hDXgUjA8UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dpBQyZ-zTZodY0hST9LMG9xsTMK6z2qmQ32UNxyKWIk3CjLISwBs8eEdxAxTptZAUg/home-background.png') fixed no-repeat ;
+  background-color: rgb(212, 212, 212);
+  background-size: cover;
+  
+}
+
+.container {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.info {
+ 
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0 0 5px grey;
+  border-radius: 6px 6px 0 0;
+  width: 70%;
+}
+
+.info h1 {
+  color: hsl(217, 28%, 48%);
+  margin: 0;
+  font-size: 27px;
+}
+
+.info h2 {
+  color: hsl(71, 73%, 54%);
+  font-size: 20px;
+}
+
+.info p {
+  color: hsl(203, 14%, 68%);
+}
+
+.utilities {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 0 5px grey;
+}
+
+.sub, .added-info {
+  background-color:  hsl(179, 62%, 43%);
+  width: 50%;
+  padding: 40px;
+  color: white;
+}
+
+.sub h2, .added-info h2 {
+  margin: 0;
+  font-size: 20px;
+  
+}
+
+.sub span {
+  font-size: 30px;
+}
+
+.sub p {
+
+  display:table;
+  min-width: 200px;
+}
+
+.sub span1 {
+  display: table-cell;
+  vertical-align: middle;
+  color: hsl(200, 10%, 82%);
+  
+}
+
+.sub button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  font-size: 17px;
+  box-shadow: 0 0 4px grey;
+}
+
+.sub button:focus {
+  outline: none;
+}
+
+.sub button:hover {
+  background-color: hsl(71, 47%, 53%);
+}
+
+.sub button:active {
+  background-color: hsl(71, 69%, 62%);
+}
+
+
+.added-info {
+  background-color:  hsl(179, 57%, 49%);
+}
+
+.added-info ul {
+  list-style: none;
+  padding: 0;
+  color: hsl(200, 5%, 88%);
+}
+
+
+.attribution { font-size: 11px; text-align: center; color: white;}
+.attribution a { color: hsl(228, 100%, 86%); }
+
+
+
+@media (max-width: 1440px){
+
+
+  .info {
+    padding: 40px;
+    width: 75%;
+  }
+
+  .utilities {
+    width: 75%;
+
+  }
+
+}
+
+
+
+
+@media (max-width: 670px){
+  .container {
+    margin-top: 60px;    
+  }
+
+  .info {
+    padding: 30px;
+    width: 80%;
+  }
+
+  .utilities {
+    flex-direction: column;
+    width: 80%;
+
+  }
+
+  .sub {
+    width: 100%;
+    
+  }
+
+  .added-info {
+    width: 100%;
+  }
+}
+
