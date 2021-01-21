@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  
+}
+
+.wrapper {
+  display: flex;
+}
+
+.description {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MzAiIGhlaWdodD0iODAwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSI5NS44NjElIiB4Mj0iMTAuOTEzJSIgeTE9IjIuNDc2JSIgeTI9IjEwMS43MTglIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRkZGMUYxIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZGIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSI5NS45MzclIiB4Mj0iMTAuODQ4JSIgeTE9IjIuNDc2JSIgeTI9IjEwMS43MTglIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRkZGMUYxIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZGIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBmaWxsPSJ1cmwoI2EpIiBkPSJNMCA4MDBjNDguNTU3LTE4NC45OTEgMTY3LjA0OC0zMDEuNTcgMzU1LjQ3My0zNDkuNzM3QzU0My44OTggNDAyLjA5NiA2ODguMDc0IDI1Mi4wMDggNzg4IDB2ODAwSDB6IiB0cmFuc2Zvcm09InJvdGF0ZSgxODAgMzk0IDQwMCkiLz48cGF0aCBmaWxsPSJ1cmwoI2IpIiBkPSJNNDEzIDgwMGMyNS42OTYtOTcuODE0IDg4LjQtMTU5LjQ1NSAxODguMTEyLTE4NC45MjRDNzAwLjgyNCA1ODkuNjA4IDc3Ny4xMiA1MTAuMjUgODMwIDM3N3Y0MjNINDEzeiIvPjwvZz48L3N2Zz4=) no-repeat;
+  padding-left: 10rem;
+  background-size: cover;
+  position: relative;  
+  min-width: 40rem;
+  width: 60%;
+  
+}
+
+.logo {
+  margin: 4rem 0 9.5rem 0;
+}
+
+.mobile-img {
+  display: none;
+}
+
+.description h1 {
+  font-weight: 300;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  color: hsl(0, 36%, 70%);
+  margin: 0;
+}
+
+.description h2 {
+  font-size: 4rem;
+  margin: 0.5rem;
+  letter-spacing: 1rem;
+}
+
+.description p {
+  width: 28rem;
+  color: hsl(0, 24%, 68%);
+  line-height: 1.7rem;
+}
+
+.description form {
+  margin-top: 3rem;
+  position: relative;
+  min-width: 26rem;
+}
+
+.description input {
+  width: 22rem;
+  height: 3rem;
+  border-radius: 1.2rem;
+  border: 1px 	rgba(193, 154, 154, 0.5) solid;
+  padding: 1rem 1.5rem ;
+  margin-bottom: 0.5rem;
+}
+
+.description input:focus {
+  outline: none;
+}
+
+.description ::placeholder {
+  color: rgba(193, 154, 154, 0.7);
+}
+
+.description button {
+  position: absolute;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
+  width: 5rem;
+  height: 3rem;
+  border-radius: 1.2rem;
+  border: none;
+  top: 0;
+  left: 20rem;
+  box-shadow: 0 0 10px rgb(229, 178, 178);
+}
+
+.description button:focus {
+  outline: none;
+  background: hsl(0, 86%, 91%);
+  box-shadow: 0 0 10px rgb(255, 227, 227);
+}
+
+.description .error-icon {
+  position: absolute;
+  top: 0.7rem;
+  left: 18rem;
+  visibility: hidden;
+}
+
+small {
+  margin-left: 1.5rem;
+  color: hsl(0, 93%, 68%);
+  visibility: hidden;
+}
+
+.description .normal small {
+  visibility: visible;
+}
+
+.description .normal .error-icon {
+  visibility: visible;
+}
+
+.description .error {
+  border: 2px solid hsl(0, 93%, 68%);
+}
+
+
+
+.image {
+  border: 1px dotted;
+  width: 40%;
+}
+
+.image img {
+  min-width: 40rem;
+  width: 100%;
+}
+
+
+
+@media (max-width: 800px) {
+
+  .description {
+    min-width: 0rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0 9rem 0;
+    
+  }
+
+  .logo {
+    margin: 4rem 0 3rem 3rem;
+  }
+
+  .mobile-img {
+    display: block;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .mobile-img img {
+    width: 100%;
+    height: 19rem;
+  }
+  
+  .description h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  .description h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .description p {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .description form {
+    margin: 3rem auto;
+    width: 22.2rem;
+    min-width: 22.2rem;
+  }
+  
+  .description input {
+    width: 20rem;
+  }
+  
+  
+  .description button {
+    width: 4rem;
+    left: 18rem;
+  }
+  
+  .description .error-icon {
+    left: 16rem;
+  }
+  
+  .description small {
+    margin-left: 1.5rem;
+    color: hsl(0, 93%, 68%);
+  }
+  
+
+  .image {
+    display: none;
+  }
+}
+
+
+
+
+
