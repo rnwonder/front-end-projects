@@ -16,7 +16,7 @@ body {
 }
 
 .description {
-  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MzAiIGhlaWdodD0iODAwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSI5NS44NjElIiB4Mj0iMTAuOTEzJSIgeTE9IjIuNDc2JSIgeTI9IjEwMS43MTglIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRkZGMUYxIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZGIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSI5NS45MzclIiB4Mj0iMTAuODQ4JSIgeTE9IjIuNDc2JSIgeTI9IjEwMS43MTglIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRkZGMUYxIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZGIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBmaWxsPSJ1cmwoI2EpIiBkPSJNMCA4MDBjNDguNTU3LTE4NC45OTEgMTY3LjA0OC0zMDEuNTcgMzU1LjQ3My0zNDkuNzM3QzU0My44OTggNDAyLjA5NiA2ODguMDc0IDI1Mi4wMDggNzg4IDB2ODAwSDB6IiB0cmFuc2Zvcm09InJvdGF0ZSgxODAgMzk0IDQwMCkiLz48cGF0aCBmaWxsPSJ1cmwoI2IpIiBkPSJNNDEzIDgwMGMyNS42OTYtOTcuODE0IDg4LjQtMTU5LjQ1NSAxODguMTEyLTE4NC45MjRDNzAwLjgyNCA1ODkuNjA4IDc3Ny4xMiA1MTAuMjUgODMwIDM3N3Y0MjNINDEzeiIvPjwvZz48L3N2Zz4=) no-repeat;
+  background: url(../images/bg-pattern-desktop.svg) no-repeat;
   padding-left: 10rem;
   background-size: cover;
   position: relative;  
@@ -137,7 +137,7 @@ small {
 
   .description {
     min-width: 0rem;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     padding: 0 0 9rem 0;
     
