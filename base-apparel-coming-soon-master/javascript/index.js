@@ -20,6 +20,12 @@ form.addEventListener('submit', (e)=>{
 
 
 const checkEmail = (input) => {
+
+  if(!input){
+    small.innerText = 'Input your email !'
+    formInput.classList.add('error')
+    form.classList.add('normal')
+  } else {
   if(!validate(input)) {
     small.innerText = 'Please provide a valid email !'
 
@@ -30,6 +36,7 @@ const checkEmail = (input) => {
     form.classList.remove('normal')
     valid = true
   }
+}
 
 }
 
