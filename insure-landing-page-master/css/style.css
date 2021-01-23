@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;500;700&display=swap');
+
+/* GLOBAL */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 81.125rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mob{
+  display: none;
+}
+
+button, .view  {
+  padding: 0.7rem 2rem;
+  border: 1.9px solid;
+  background-color: inherit;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* NAV */
+
+nav {
+  padding: 0 7rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  z-index: 1;
+  background-color: white;
+  position: relative;
+}
+
+nav [alt="logo"], footer [alt="logo"] {
+  height: 1.5rem;
+  margin: auto 0;
+}
+
+nav ul, .top ul {
+  display: flex;
+}
+
+nav li {
+  margin: auto 0 auto 2rem;
+}
+
+nav a {
+  color: hsl(273, 4%, 51%);
+  display: block;
+}
+
+nav a:focus, nav a:hover {
+  color: black;
+}
+
+nav .view {
+  color: black;
+  border-color: black;
+  
+}
+
+nav .view:hover, nav .view:focus {
+  background-color: black;
+  color: white;
+}
+
+
+
+/* INTRO */
+
+.intro {
+  padding: 10rem 7rem;
+  background-color: hsl(256, 26%, 20%);
+  position: relative;
+  color: white;
+  height: 42rem;
+  display: flex;
+}
+
+aside{
+  width: 50%;
+  min-width: 35rem;
+}
+
+.intro-right {
+  position: absolute;
+  top: -4.5rem;
+  right: 0;
+  z-index: 0;
+}
+
+.intro-left {
+  position: absolute;
+  bottom: -20.8rem;
+  left: 0;
+}
+
+.line {
+  width: 10rem;
+  border-top: 1px solid;
+  margin-bottom: 3.5rem;
+}
+
+.intro h1 {
+  font-size: 4rem;
+  width: 31rem;
+  margin: 0;
+  letter-spacing: 0.1rem;
+  line-height: 3.7rem;
+}
+
+.intro p {
+
+  width: 34rem;
+  line-height: 1.7rem;
+  margin-top: 1.2rem;
+  color: hsl(0, 0%, 82%);
+
+}
+
+.intro .button {
+  margin-top: 2rem;
+}
+
+.intro button {
+  border-color: rgb(255, 255, 255);
+  color: white;
+}
+
+.intro button:hover, .intro button:focus, .we-work button:hover, .we-work button:focus {
+  background-color: white;
+  color: black;
+  outline: none;
+}
+
+/* BODY */
+
+.body {
+  padding: 19.3rem 7rem 0 7rem;
+  
+}
+
+.body .line {
+  border-color: hsl(273, 4%, 51%);
+}
+
+.body h2 {
+  font-size: 4rem;
+  
+}
+
+.body h3 {
+  font-size: 1.7rem;
+}
+
+.body p {
+  width: 22rem;
+  color: hsl(273, 4%, 51%);
+}
+
+.we-work {
+  position: relative;
+  height: 15.688rem;
+  background-color: hsl(256, 26%, 20%);
+  color: white;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 10rem 0 9rem 0;
+}
+
+.we-work-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.we-work h2 {
+  font-size: 3rem;
+  width: 27rem;
+  margin: auto 0;
+}
+
+.we-work .button {
+  margin: auto 0;
+}
+
+.we-work button {
+  color: white;
+  position: relative;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer {
+  position: relative;
+  padding: 3rem 7rem;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.foot-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(273, 4%, 51%);
+  padding-bottom: 1.5rem;
+}
+
+footer [alt="logo"] {
+  position: relative;
+}
+
+.top li {
+  margin: auto 0 auto 1rem;
+}
+
+footer .container {
+  position: relative;
+  margin-top: 1.5rem;
+  width: 64rem;
+}
+
+footer .container h4 {
+  color: hsl(273, 4%, 51%);
+  font-size: 0.79rem;
+}
+
+footer .container li {
+  margin-bottom: 0.7rem;
+}
+
+footer .container a {
+  font-size: 0.8rem;
+  color: black;
+  display: block;
+}
+
+footer .container a:hover, footer .container a:focus {
+  text-decoration: underline;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+  /* GLOBAL */
+
+  body {
+    min-width: 0;
+  }
+  .mob{
+    display: block;
+  }
+
+  .desk {
+    display: none;
+  }
+
+  button, .view  {
+    padding: 0.6rem 1.5rem;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  /* NAV */
+
+  nav {
+    padding: 0 2rem;
+  }
+
+  .nav {
+    padding: 0.3rem 1.5rem;
+    border: none;
+  }
+
+  .nav:focus, .nav:hover {
+    outline: none;
+  }
+
+
+  nav ul {
+    position: absolute;
+    flex-direction: column;
+    margin: 0;
+    background-color: hsl(270, 9%, 17%);
+    width: 100%;
+    right: 0;
+    top: 2.9rem;
+    height: 30rem;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 2rem 0 0 0;
+  }
+
+  nav a, nav .view  {
+    color: white;
+    border-color: white;
+  }
+
+  nav [alt="nav"] {
+    position: absolute;
+    bottom: 0;
+  }
+
+  nav a:focus, nav a:hover {
+    color: rgb(213, 213, 213);
+  }
+    
+  nav .view:hover, nav .view:focus {
+    background-color: white;
+    color: black;
+  }
+
+  /* INTRO */
+
+  [alt="family"] {
+    width: 100%;
+    height: 30rem;
+  }
+
+
+  .intro {
+    padding: 5rem 2rem;
+    position: relative;
+    height: inherit;
+  }
+  
+  aside{
+    width: 100%;
+    min-width: 0;
+  }
+  
+  .intro-right1 {
+    position: absolute;
+    bottom: -10rem;
+    right: 0;
+  }
+  
+  .intro-left1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .intro h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    width: 100%;
+    line-height: 2.8rem;
+  }
+  
+  .intro p {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .intro .button {
+    margin: 2rem auto;
+    width: 10.46rem;
+  }
+
+  /* BODY */
+  
+  .body {
+    padding: 9rem 2rem;
+  }
+  
+  .body .line {
+    margin: 0 auto;
+  }
+  
+  .body h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .card {
+    margin-top: 2rem;
+  }
+
+  .card .img {
+    margin: 0 auto;
+    width: 5.5rem;
+  }
+  
+  .body h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .body p {
+    width: 100%;
+    text-align: center;
+  }
+  
+
+  .we-work {
+    height: 21.7rem;
+    padding: 0.1rem 2rem;
+    display: block;
+    margin: 10rem 0 7rem 0;
+  }
+  
+  .we-work-bg1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .we-work h2 {
+    font-size: 2.6rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .we-work .button {
+
+    margin: 4rem auto;
+    width: 12rem;
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 3rem 2rem;
+  }
+  
+  .foot-bg1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .top {
+    position: relative;
+    display: block;
+  }
+  
+  .top .img {
+    width: 9.4rem;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .top ul {
+    width: 11rem;
+    margin: 1rem auto;
+  }
+  
+  
+  footer .container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card2 {
+    width: 10rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  footer .container h4 {
+    color: hsl(273, 4%, 51%);
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+  }
+
+}
