@@ -338,22 +338,24 @@ footer .container a:hover, footer .container a:focus {
     background-color: hsl(270, 9%, 17%);
     width: 100%;
     right: 0;
-    top: 2.9rem;
-    height: 30rem;
+    top: 3.6rem;
+    height: 32rem;
     align-items: center;
   }
 
   nav li {
+    position: relative;
     margin: 2rem 0 0 0;
   }
 
   nav a, nav .view  {
-    
+    position: relative;
     color: white;
     border-color: white;
   }
 
   nav [alt="nav"] {
+    max-width: 20rem;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -466,7 +468,7 @@ footer .container a:hover, footer .container a:focus {
   
   .we-work h2 {
     position: relative;
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     width: 100%;
     min-width: 11.87rem;
     text-align: center;
@@ -475,7 +477,7 @@ footer .container a:hover, footer .container a:focus {
   
   .we-work .button {
 
-    margin: 1rem auto;
+    margin: 4rem auto;
     width: 11.87rem;
   }
 
