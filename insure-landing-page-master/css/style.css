@@ -317,11 +317,12 @@ footer .container a:hover, footer .container a:focus {
   /* NAV */
 
   nav {
-    padding: 0 2rem;
+    padding: 2%;
   }
 
   .nav {
-    padding: 0.3rem 1.5rem;
+    
+    padding: 1%;
     border: none;
   }
 
@@ -347,11 +348,13 @@ footer .container a:hover, footer .container a:focus {
   }
 
   nav a, nav .view  {
+    
     color: white;
     border-color: white;
   }
 
   nav [alt="nav"] {
+    width: 100%;
     position: absolute;
     bottom: 0;
   }
@@ -450,7 +453,7 @@ footer .container a:hover, footer .container a:focus {
 
   .we-work {
     height: 21.7rem;
-    padding: 0.1rem 2rem;
+    padding: 0.1rem 2%;
     display: block;
     margin: 10rem 0 7rem 0;
   }
@@ -462,16 +465,18 @@ footer .container a:hover, footer .container a:focus {
   }
   
   .we-work h2 {
-    font-size: 2.6rem;
+    border: 1px dotted;
+    font-size: 2.3rem;
     width: 100%;
+    min-width: 11.87rem;
     text-align: center;
     margin-top: 2rem;
   }
   
   .we-work .button {
 
-    margin: 4rem auto;
-    width: 12rem;
+    margin: 1rem auto;
+    width: 11.87rem;
   }
 
   /* FOOTER */
@@ -484,6 +489,7 @@ footer .container a:hover, footer .container a:focus {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
   }
   
   .top {
