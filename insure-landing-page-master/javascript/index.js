@@ -3,9 +3,14 @@
 const menuButton = document.getElementById('menu')
 const closeButton = document.getElementById('close')
 const navBar = document.getElementById('nav-bar')
+const intro = document.querySelector('.intro')
+const body = document.querySelector('.body')
+const footer = document.querySelector('footer')
 
 const menuParent = menuButton.parentElement
 const closeParent = closeButton.parentElement
+
+const cl = [closeButton, intro, body, footer]
 
 
 menuButton.addEventListener('click', ()=>{
@@ -14,8 +19,14 @@ menuButton.addEventListener('click', ()=>{
   navBar.classList.remove('desk')
 })
 
-closeButton.addEventListener('click', ()=>{
-  menuParent.classList.remove('desk')
-  closeParent.classList.add('desk')
-  navBar.classList.add('desk')
-})
+for (let i = 0; i<cl.length; i++){
+  cl[i].addEventListener('click', ()=>{
+    menuParent.classList.remove('desk')
+    closeParent.classList.add('desk')
+    navBar.classList.add('desk')
+  })
+}
+
+
+
+
