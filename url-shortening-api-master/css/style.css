@@ -1,0 +1,731 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.mob {
+  display: none;
+}
+
+ /* NAV */
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+nav .img {
+  height: 2.1rem;
+  margin: auto 2.8rem auto 0;
+}
+
+nav .nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  height: 1.2rem;
+  margin: auto 0;
+}
+
+nav .rr {
+  margin-right: 2rem;
+}
+
+nav a {
+  display: block;
+  font-size: 0.8rem;
+  color: hsl(257, 7%, 63%);
+}
+
+nav a:focus, nav a:hover {
+  color: black;
+}
+
+.sign {
+  border-radius: 20px;
+  height: 2rem;
+  background-color: hsl(180, 66%, 49%);
+}
+
+
+nav .sign a {
+  padding: 0.4rem 0.8rem;
+  color: white;
+}
+
+
+ /* INTRO */
+
+.intro {
+  position: relative;
+  padding: 0 3rem;
+}
+
+.content {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+.right img {
+  min-width: 24rem;
+  min-height: 30rem;
+  width: 100%;
+  
+}
+
+.left h1 {
+  font-size: 3.7rem;
+  max-width: 30rem;
+  width: 100%;
+  margin: 6rem 0 0 0;
+  line-height: 4.6rem;
+}
+
+.left p {
+  max-width: 30rem;
+  margin: 1rem 0;
+  color: hsl(257, 7%, 63%);
+}
+
+.left button {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: hsl(180, 66%, 49%);
+  font-weight: bold;
+}
+
+
+.container {
+  position: relative;
+  border: 1px dotted white;
+  margin-top: 3rem;
+}
+
+
+.shorten {
+  position: absolute;
+  bottom: -3.4rem;
+  z-index: 2;
+  position: relative;
+  height: 7rem;
+  text-align: center;
+  background: url('../images/bg-shorten-desktop.svg') hsl(257, 27%, 26%);
+  padding: 2rem 3rem;
+  border-radius: 10px;
+}
+
+form {
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+form input {
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+  height: 2.7rem;
+  padding-left: 1.5rem;
+}
+
+form button {
+  border: none;
+  border-radius: 10px;
+  width: 18%;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem; 
+}
+
+form small {
+  color: red;
+  position: absolute;
+  bottom: 1rem;
+  left: 4.6rem;
+  visibility: hidden;
+}
+
+form .generate {
+  background-color: gray;
+}
+
+.error input{
+  border: 2px solid red;
+}
+
+.error small {
+  visibility: visible;
+}
+
+.body {
+  position: relative;
+  text-align: center;
+  background-color: hsl(210, 8%, 90%);
+  padding: 4rem 3rem 14rem 3rem;
+}
+
+.view {
+  display: flex;
+  text-align: start;
+  justify-content: space-between;
+  padding: 0.2rem 1rem;
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+  
+}
+
+.view-left p {
+  color: black;
+  
+}
+
+
+
+.view-right {
+  display: flex;
+  color: hsl(180, 66%, 49%);
+}
+
+.view-right button{
+  padding: 0 2rem;
+  height: 2.5rem;
+  margin: auto 0 auto 2rem;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  background-color: hsl(180, 66%, 49%);
+}
+
+.view-right .copied, .view-right .copied:focus, .view-right .copied:hover  {
+  background-color: hsl(257, 27%, 26%);
+  padding: 0 1.6rem;
+}
+
+.view-right button:focus, .view-right button:hover {
+  outline: none;
+  background-color: hsl(257, 27%, 26%);
+}
+
+.body h2 {
+  margin-top: 3rem;
+}
+
+.body .des {
+  color: hsl(0, 0%, 56%);
+
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.contain {
+  border: 3px solid hsl(180, 66%, 49%);
+  position: relative;
+  display: flex;
+  margin: 15rem 0;
+}
+
+.card {
+  position: relative;
+  position: absolute;
+  padding: 2rem 2rem 3rem 2rem;
+  width: 30%;
+  top: -6rem;
+  background-color: white;
+  text-align: start;
+}
+
+.card .bg {
+  position: absolute;
+  top: -3rem;
+  left: 1rem;
+  width: 4.7rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  background-color: hsl(257, 27%, 26%);
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.card p {
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  color: hsl(0, 0%, 56%);
+}
+
+.l{
+  left: -0.2rem;
+  top: -8rem;
+}
+
+
+.m{
+  left: 35%;
+}
+
+.r{
+  right: -0.2rem;
+  top: -4rem;
+}
+
+.boost {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 0.5rem 0 2rem;
+  background: url('../images/bg-boost-desktop.svg') hsl(257, 27%, 26%);
+  color: white;
+}
+
+.boost button {
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: hsl(180, 66%, 49%);
+  font-weight: bold;
+}
+
+
+/* FOOTER */
+
+footer {
+  padding: 3rem;
+  background-color: hsl(260, 8%, 14%);
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+footer .img {
+  color: white;
+}
+
+
+.links h4 {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+
+footer li {
+  margin-bottom: 0.8rem;
+}
+
+.links a {
+  color: hsl(257, 7%, 63%);
+  display: block;
+  font-size: 0.8rem;
+}
+
+.social {
+  margin: 0;
+  display: flex;
+}
+
+.social .rr {
+  margin-right: 1.5rem;
+}
+
+.social a {
+  display: block;
+  color: white;
+}
+
+.social a:focus, .social a:hover, .links a:focus, .links a:hover {
+  color: hsl(180, 66%, 49%);
+}
+
+button:focus, button:hover, .sign:focus, .sign:hover, .view-right button:focus, .view-right button:hover {
+  background-color:hsl(180, 87%, 57%);
+}
+
+form .generate:focus, form .generate:hover{
+  background-color: gray;
+}
+
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  background-color: hsl(260, 8%, 14%);
+  color: white;
+}
+.attribution a { 
+  color: hsl(257, 7%, 63%); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px){
+  body {
+    min-width: 0;
+  }
+
+  .mob {
+    display: inline;
+  }
+
+  .desk, .nav.desk {
+    display: none;
+  }
+
+
+
+   /* NAV */
+
+   nav {
+    padding: 0 5%;
+  }
+
+  .nav-button {
+    padding: 0.4rem 0 0 1rem;
+    border: none;
+    background-color: inherit;
+  }
+
+  .nav-button:focus, .nav-button:hover {
+    background-color: inherit;
+  }
+
+  i {
+    font-size: 2rem;
+  }
+
+  nav .nav {
+    position: absolute;
+    background-color: hsl(257, 27%, 26%);
+    flex-direction: column;
+    width: 90%;
+    bottom: -21.7rem;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+
+  nav .first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid hsl(257, 7%, 63%);
+    padding-bottom: 2rem;
+  }
+
+  nav .second {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  
+  nav .rr {
+    margin: 0 0 2rem 0;
+  }
+
+  nav a {
+   
+    font-size: 1.1rem;
+    color: white;
+
+  }
+
+  nav a:focus, nav a:hover {
+    color: hsl(257, 7%, 63%);
+  }
+
+  .sign {
+    display: block;
+    width: 100%;
+    padding: 0.7rem 0.8rem;
+    border-radius: 20px;
+    height: inherit;
+    background-color: hsl(180, 66%, 49%);
+  }
+
+
+  nav .sign a {
+    padding: 0;
+    color: white;
+  }
+
+
+  /* INTRO */
+
+  .intro {
+    padding: 0 5%;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+ 
+  .left {
+    width: 100%;
+  }
+  
+  .right {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .right img {
+    min-width: 0;
+    min-height: 0;
+    max-width: 30rem;
+    width: 100%;
+    
+  }
+  
+  .left h1 {
+    font-size: 2rem;
+    max-width: 20rem;
+    margin: 2rem auto 0 auto;
+    line-height: 2.6rem;
+  }
+  
+  .left p {
+    max-width: 20rem;
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .left button {
+    margin-top: 0.3rem;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+
+
+  .container {
+    position: relative;
+    border: 1px dotted white;
+    margin-top: 0.3rem;
+  }
+
+
+  .shorten {
+    bottom: -5rem;
+    height: inherit;
+    padding: 1.5rem;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  form button {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0.8rem 0;
+  }
+
+  form small {
+    bottom: 4.5rem;
+    left: 3rem;
+  }
+
+  .body {
+    padding: 6rem 5% 14rem 5%;
+  }
+
+  .view {
+    flex-direction: column;
+    padding: 0.2rem 0 0.7rem 0;
+    background-color: white;
+    border-radius: 6px;
+    margin-bottom: 0.8rem;
+  }
+
+  .view-left {
+    margin: 0;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    padding: 0;
+  }
+
+  .view-left p {
+    padding: 0.7rem 1rem 0.3rem 1rem;
+    margin: 0;
+    color: black;
+  }
+
+  .view-right p {
+    width: 100%;
+  }
+  .view-right {
+    margin: 0;
+    padding: 0 1rem;
+    flex-direction: column;
+    color: hsl(180, 66%, 49%);
+  }
+
+  .view-right button{
+    width: 100%;
+    padding: 0.7rem 2rem;
+    height: inherit;
+    margin: 0;
+  }
+
+  .body h2 {
+    margin-top: 3rem;
+  }
+
+  .body .des {
+    width: 100%;
+  }
+
+  .contain {
+    width: 0.1rem;
+    margin: 5rem auto;
+    flex-direction: column;
+    height: 50rem;
+
+  }
+
+  .card {
+    height: 15rem;
+    position: relative;
+    position: relative;
+    width: 15rem;
+    top: 0;
+  }
+
+  .card .bg {
+    position: absolute;
+    top: -3rem;
+    left: 5.3rem;
+    width: 4.5rem;
+    padding: 0.75rem;
+  }
+
+
+  .card.l{
+    left: -7.5rem;
+    top: -0.2rem;
+  }
+
+
+  .card.m{
+    top: 4.3rem;
+    left: -7.5rem;
+  }
+
+  .card.r{
+    right: 7.5rem;
+    top: 9rem;
+  }
+
+  .boost h2 {
+    font-size: 1.5rem;
+  }
+
+
+  /* FOOTER */
+
+  footer {
+    padding: 4rem 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer .img {
+    color: white;
+    margin-bottom: 2rem;
+  }
+
+
+  .links  {
+    margin-bottom: 1rem;
+  }
+
+}
