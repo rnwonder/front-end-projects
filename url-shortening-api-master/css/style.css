@@ -654,6 +654,11 @@ form .generate:focus, form .generate:hover{
     margin: 0;
   }
 
+  .view-right .copied, .view-right .copied:focus, .view-right .copied:hover  {
+    background-color: hsl(257, 27%, 26%);
+    padding: 0.7rem 2rem;
+  }
+
   .body h2 {
     margin-top: 3rem;
   }
