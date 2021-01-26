@@ -443,7 +443,7 @@ form .generate:focus, form .generate:hover{
    /* NAV */
 
    nav {
-    padding: 0 5%;
+    padding: 1rem 5%;
   }
 
   .nav-button {
