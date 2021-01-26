@@ -15,13 +15,9 @@ let cl = [close, intro, body, footer]
 // ACCESS FOR FORM
 const form = document.getElementById('form')
 const inputUrl = document.getElementById('url')
-const output = document.getElementById('output')
 const small = form.querySelector('small')
-
+const output = document.querySelector('.shortened-links')
 const formButton = form.querySelector('button')
-
-let shortLink = ''
-let originalLink = ''
 
 
 // NAV LOGIC
@@ -39,30 +35,7 @@ for(let i = 0; i<cl.length; i++) {
   })
 }
 
-
-
 // FORM LOGIC
-document.addEventListener('click',function(e){
-  const outputButton = output.querySelectorAll('button')
-  
-  for(let i=0; i<outputButton.length; i++){
-    outputButton[i].addEventListener('click', (e)=> {
-      const parent = outputButton[i].parentElement
-      const finalLink = parent.querySelector('p')
-      e.target.classList.add('copied')
-      window.navigator.clipboard.writeText(finalLink.innerText)
-      outputButton[i].innerText = 'Copied'
-
-      setTimeout(()=>{
-        e.target.classList.remove('copied')
-        outputButton[i].innerText = 'Copy'
-      },1500)
-    })
-  }
-
-});
-
-
 form.addEventListener('submit', (e)=>{
   e.preventDefault()
 
@@ -78,15 +51,7 @@ const checkUrl = (input) => {
     if (!validateUrl(input)){
       handleErr('Enter a valid URL!!!')
     } else {
-      formButton.classList.add('generate')
-      formButton.innerText = 'Generating...'
       getShortLink(input)
-
-      setTimeout(()=>{
-        formButton.classList.remove('generate')
-        formButton.innerText = 'Shorten It!'
-        inputUrl.value = ''
-      },4500)
     }
   }
 }
@@ -109,33 +74,51 @@ const validateUrl = (input) => {
 }
 
 
-async function getShortLink(link){
-  fetch(`https://api.shrtco.de/v2/shorten?url=${link}`)
-  .then((res) => res.json())
-  .then((data)=> {
-    shortLink = data.result.short_link2
-    originalLink = data.result.original_link
+async function getShortLink(link) {
+  try {
+    // change text to generating
+    formButton.classList.add('generate')
+    formButton.innerText = 'Generating...'
+
+    const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${link}`);
 
 
-      output.insertAdjacentHTML('afterbegin', `
-          <div  class="view">
-            <div  class="view-left">
-              <p>${originalLink}</p>
-            </div>
-            <div class="view-right">
-              <p>${shortLink}</p>
-              <button>Copy</button>
-            </div>
-          </div>`
+    // change text to short url
+    formButton.classList.remove('generate')
+    formButton.innerText = 'Shorten it'
+    inputUrl.value = ''
 
-          
-      )
+    const data =  await res.json();
 
-      console.log(outputButton)
-  })
-  .catch((err) => {
+    output.innerHTML = `
+    <div  class="view">
+      <div  class="view-left">
+        <p>${data.result.original_link}</p>
+      </div>
+      <div class="view-right">
+        <p>${data.result.short_link2}</p>
+        <button id=${data.result.code} onClick="copyMe('${data.result.short_link2}','${data.result.code}')" >Copy</button>
+      </div>
+    </div>` + output.innerHTML
+
+  } catch(err) {
     console.log(err)
-  })
+  }
+}
+
+
+
+const copyMe = (link, id) => {
+  const clickedButton = document.getElementById(id);
+
+  clickedButton.classList.add('copied')
+  window.navigator.clipboard.writeText(link)
+  clickedButton.innerText = 'Copied'
+
+  setTimeout(()=>{
+    clickedButton.classList.remove('copied')
+    clickedButton.innerText = 'Copy'
+  },1500)
 }
 
 
