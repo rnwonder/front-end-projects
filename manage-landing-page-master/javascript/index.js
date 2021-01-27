@@ -11,7 +11,7 @@ let cl = [close, background]
 
 // ACCESS SCROLL
 const scroll = document.querySelector('.scroll')
-const scrollWidth = scroll.offsetWidth
+const scrollWidthPage = scroll.offsetWidth
 const position1 = document.getElementById('one')
 const position2 = document.getElementById('two')
 const position3 = document.getElementById('three')
@@ -53,6 +53,8 @@ for(let i = 0; i<cl.length; i++) {
 // SCROLL LOGIC
 scroll.addEventListener('scroll', ()=>{
 
+  const scrollWidth = scroll.offsetWidth
+
     if (scroll.scrollLeft < scrollWidth) {
       position1.classList.add('fill') 
       position2.classList.remove('fill') 
@@ -84,10 +86,10 @@ scroll.addEventListener('scroll', ()=>{
 })
 
 
-if (scrollWidth < 800) {
-  scroll.scrollLeft = (scrollWidth + 28) * 1
+if (scrollWidthPage < 800) {
+  scroll.scrollLeft = (scrollWidthPage + 28) * 1
 } else {
-  scroll.scrollLeft = 0.1 * scrollWidth
+  scroll.scrollLeft = 0.1 * scrollWidthPage
 }
 
 
