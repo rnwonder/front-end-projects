@@ -203,7 +203,7 @@ nav .nav {
 
 .no p {
   padding:  0.4rem 0 0.5rem 0;
-  width: 15%;
+  width: 3.7rem;
   text-align: center;
   background-color: hsl(12, 88%, 59%);
   color: white;
@@ -604,8 +604,8 @@ footer {
     position: absolute;
     top: -0.4rem;
     left: -2rem;
-    width: 0.7rem;
-    height: 0.7rem;
+    width: 0.6rem;
+    height: 0.6rem;
     background-color: hsl(227, 76%, 62%);
     border-radius: 50%;
     margin-left: 39%;
@@ -634,6 +634,7 @@ footer {
   }
 
   .no p {
+    width: 15%;
     margin: 0 4% 0 0;
   }
 
