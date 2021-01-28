@@ -14,6 +14,7 @@ const closeParent = closeButton.parentElement
 const cl = [closeButton, intro, body, footer]
 
 
+// NAV LOGIC
 menuButton.addEventListener('click', ()=>{
   menuParent.classList.add('desk')
   closeParent.classList.remove('desk')
@@ -31,6 +32,14 @@ for (let i = 0; i<cl.length; i++){
 }
 
 
+
+
+
+
+
+
+
+
 // ACCESS TABS
 const bookmarkingTab = document.getElementById('book')
 const bookmarkingView = document.getElementById('book1')
@@ -38,38 +47,6 @@ const searchingTab = document.getElementById('search')
 const searchingView = document.getElementById('search1')
 const shareTab = document.getElementById('share')
 const shareView = document.getElementById('share1')
-
-
-
-// ACCESS FAQS
-const faqBookmark = document.getElementById('bookmark?')
-const faqBrowser = document.getElementById('browser?')
-const faqApp = document.getElementById('app?')
-const faqOther = document.getElementById('other?')
-
-const faq = [faqBookmark, faqBrowser, faqApp, faqOther]
-const preventHighlight = [bookmarkingTab, searchingTab, shareTab, faqBookmark, faqBrowser, faqApp, faqOther ]
-
-let count = [0, 0, 0, 0]
-
-
-
-// ACCESS FORM
-const form = document.getElementById('form')
-const small = form.querySelector('small')
-const email = document.getElementById('email')
-let valid = false
-
-
-
-
-
-// PREVENT DEFAULT HIGHLIGHTING OF P TAGS ELEMENT ON THE QUESTION AND TAB DIVS
-for(let i = 0; i < preventHighlight.length; i++){
-  preventHighlight[i].addEventListener('mousedown', (e)=>{
-    e.preventDefault(); 
-  });
-}
 
 
 
@@ -110,6 +87,29 @@ shareTab.addEventListener('click', ()=>{
 
 
 
+
+
+
+
+
+// ACCESS FAQS
+const faqBookmark = document.getElementById('bookmark?')
+const faqBrowser = document.getElementById('browser?')
+const faqApp = document.getElementById('app?')
+const faqOther = document.getElementById('other?')
+
+const faq = [faqBookmark, faqBrowser, faqApp, faqOther]
+const preventHighlight = [bookmarkingTab, searchingTab, shareTab, faqBookmark, faqBrowser, faqApp, faqOther ]
+
+let count = [0, 0, 0, 0]
+
+// PREVENT DEFAULT HIGHLIGHTING OF CLICKABLE P TAG ELEMENTS ON THE QUESTION AND TAB DIVS
+for(let i = 0; i < preventHighlight.length; i++){
+  preventHighlight[i].addEventListener('mousedown', (e)=>{
+    e.preventDefault(); 
+  });
+}
+
 // FAQ LOGIC
 for(let i = 0; i < faq.length; i++) {
 
@@ -133,6 +133,21 @@ for(let i = 0; i < faq.length; i++) {
 
 
 
+
+
+
+
+
+
+
+// ACCESS FORM
+const form = document.getElementById('form')
+const small = form.querySelector('small')
+const email = document.getElementById('email')
+let valid = false
+
+
+
 // FORM LOGIC
 form.addEventListener('submit' , (e)=>{
   e.preventDefault()
@@ -140,7 +155,15 @@ form.addEventListener('submit' , (e)=>{
   checkInput(email.value)
 
   if(valid) {
-    form.submit()
+    // form.submit()
+    alert(`
+      CONGRATULATIONS!!!
+
+      Your email - "${email.value}" has been added to our 
+      database!
+
+      We will keep you updated on new features!
+    `)
   }
 })
 
