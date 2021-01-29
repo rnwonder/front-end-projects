@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;500;700&display=swap');
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  margin: 0;
+  background-color: hsl(180, 52%, 96%);
+  min-width: 60rem;
+}
+
+
+
+.nav {
+  padding-top: 2rem;
+  position: relative;
+  height: 10rem;
+  background: url('../images/bg-header-desktop.svg') hsl(180, 29%, 50%) no-repeat;
+  background-size: cover;
+  margin-bottom: 7rem;
+}
+
+.filter {
+  position: absolute;
+  background-color: white;
+  margin: 0 7% 2rem 7%;
+  width: 86%;
+  bottom: -3.7rem;
+  display: flex;
+  justify-content: space-between;
+  
+  border-radius: 5px;
+  box-shadow: 0 0 10px hsl(180, 22%, 69%);
+  padding: 1rem 2rem;
+}
+
+.tags {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tag {
+  display: flex;
+  margin: auto 1rem auto 0;
+  background-color: hsl(180, 29%, 50%);
+  
+  
+}
+
+.tag p {
+  margin: 0;
+  padding: 0.3rem;
+  background-color: hsl(180, 31%, 95%);
+  color: hsl(180, 29%, 50%);
+  font-size: 0.8rem;
+  
+}
+
+.tag img {
+  cursor: pointer;
+  padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+}
+
+.tag img:hover {
+  background-color: hsl(180, 14%, 20%);
+}
+
+.clear {
+  margin: auto 0;
+}
+
+.clear p {
+  cursor: pointer;
+  margin: 0;
+  color: hsl(180, 29%, 50%);
+  font-size: 0.8rem;
+}
+
+.clear p:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+.items {
+  display: flex;
+  margin: 0 7% 2rem 7%;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px hsl(180, 16%, 85%);
+}
+
+.new {
+  border-left: 5px solid hsl(180, 29%, 50%);
+}
+
+.items .logo {
+  margin-right: 2rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.top {
+  display: flex;
+}
+
+.top h2 {
+  margin: auto 0;
+  font-size: 1rem;
+  color:  hsl(180, 29%, 50%);
+  margin-right: 0.7rem;
+}
+
+.top p {
+  font-size: 0.7rem;
+  margin:0 0.7rem 0 0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+}
+
+.top p:nth-child(3) {
+  background-color: hsl(180, 14%, 20%);
+}
+
+.title {
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+.title h1 {
+  cursor: pointer;
+  margin: 0;
+}
+
+.title h1:hover {
+  color: hsl(180, 29%, 50%);
+}
+
+.bottom {
+  margin-top: 0.3rem;
+}
+
+.bottom ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.bottom li:nth-child(1) {
+  list-style: none;
+  margin: auto 2rem auto 0;
+}
+
+.bottom li:nth-child(2) {
+  margin-right: 2rem;
+}
+
+
+.bottom p {
+  font-size: 0.8rem;
+  margin: 0;
+  color: hsl(180, 8%, 52%);
+}
+
+
+.lang ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.lang li {
+  margin: auto 0 auto 0.8rem;
+}
+
+.lang p {
+  cursor: pointer;
+  padding: 0.3rem 0.4rem;
+  font-size: 0.8rem;
+  background-color:  hsl(180, 31%, 95%);
+  color: hsl(180, 29%, 50%);
+  border-radius: 3px;
+}
+
+.lang p:hover {
+  background-color:  hsl(180, 29%, 50%);
+  color: hsl(180, 31%, 95%);
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+  body {
+    min-width: 0;
+  }
+
+  .filter {
+    margin: 0 5% 2rem 5%;
+    width: 90%;
+    bottom: -4rem;
+  }
+
+  .tag {
+    
+    margin: 0.3rem 1rem auto 0;
+  }
+
+  .items {
+    position: relative;
+    flex-direction: column;
+    margin: 0 5% 4rem 5%;
+    padding: 3rem 4% 0 4% ;
+  }
+
+  
+  .items .logo {
+    position: absolute;
+    margin-right: 2rem;
+    top: -2rem;
+    left: 1.7rem;
+    width: 4rem;
+
+  }
+
+  .logo img {
+    width: 100%;
+  }
+  
+  .content {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .contain {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid hsl(180, 6%, 75%);
+  }
+
+
+  .top {
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .top h2 {
+    margin-right: 0.5rem;
+  }
+  
+
+  .title {
+    margin-bottom: 1rem;
+  }
+  
+  .lang ul {
+    flex-wrap: wrap;
+  }
+
+  .lang li {
+    
+    margin: auto 0.8rem auto 0;
+  }
+  
+}
