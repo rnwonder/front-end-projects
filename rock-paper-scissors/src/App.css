@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+
+/* GLOBAL */
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: rgba(20,21,57,1);
+  height: 100%;
+  color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.mob, .result.mob {
+  display: none;
+}
+
+
+/* SCORCE BOARD */
+
+.score-board {
+  border: 3px solid hsl(217, 16%, 45%);
+  width: 50%;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.score-board ul {
+    margin: 0;
+}
+
+.score-board p {
+    margin: 0;
+    font-size: 2rem;
+}
+
+
+.score {
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.score h1 {
+    height: 0.1rem;
+    margin: 0;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    color: hsl(229, 64%, 46%);
+    letter-spacing: 0.2rem;
+
+}
+
+.score p {
+    margin: 0;
+    text-align: center;
+    font-size: 3.5rem;
+    color: hsl(229, 25%, 31%);
+    font-weight: 700;
+}
+
+
+/* GAME */
+
+.game {
+    height: 30rem;
+    background: url("./images/bg-triangle.svg") no-repeat;
+    background-position: center;
+}
+
+.top {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 6.2rem;
+}
+
+.box {
+    border: 20px solid;
+    text-align: center;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+}
+
+.box.rr {
+  margin-right: 5rem;
+}
+
+.box.paper {
+    
+    border-color: hsl(230, 89%, 65%);
+}
+
+
+.box.scissors {
+    border-color: hsl(40, 84%, 53%);
+}
+
+.box.rock {
+    border-color: hsl(349, 70%, 56%);
+}
+
+.box img {  
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+
+
+/* ACTIVE */
+
+
+.active {
+  display: flex;
+  justify-content: center;
+}
+
+.decide {
+
+  width: 30%;
+  text-align: center;
+}
+
+.decide .box {
+  margin: 3rem auto;
+  cursor: not-allowed;
+}
+
+.decide h2 {
+  letter-spacing: 0.1rem;
+}
+
+.result{
+
+  width: 25%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result div {
+  margin: auto 0;
+}
+
+.result h2 {
+  font-size: 2.4rem;
+}
+
+.result button {
+  border: 2px solid white;
+  background-color: white;
+  color: red;
+  padding: 1rem 3rem;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  
+}
+
+.result button:hover {
+  border: 2px solid white;
+  background-color: inherit;
+  color: white;
+  
+}
+
+.decide .blank {
+  background-color: black;
+  border-color: black;
+  cursor: wait;
+}
+
+.decide.win {
+  background: radial-gradient(circle, rgba(31,55,86,1) 10%, rgba(20,21,57,1) 80%);
+}
+
+
+/* RULE */
+
+.rule {
+  text-align: end;
+  margin: 2rem 2rem;
+}
+
+.rule button {
+  padding: 0.6rem 2rem;
+  border: 2px solid hsl(217, 16%, 45%);
+  border-radius: 10px;
+  color: white;
+  background-color: inherit;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.rule-view {
+  left: 30%;
+  position: relative;
+  position: absolute;
+  border-radius: 10px;
+  top: 30%;
+  background-color: rgb(255, 255, 255);
+  padding: 9%;
+  
+}
+
+.rule-view img:first-child {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.rule button:hover {
+  background-color: ivory;
+  color: hsl(237, 49%, 15%);
+  font-weight: 700;
+}
+
+.hide, .result.mob.hide {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+
+  .mob, .result.mob {
+      display: inline-block;
+  }
+
+  .desk, .result.desk {
+      display: none;
+  }
+
+  /* SCORCE BOARD */ 
+
+  .score-board {
+      
+      width: 90%;
+      
+  }
+  
+  .score-board p {
+        font-size: 1.5rem;
+  }
+    
+    
+  .score {
+        padding: 0.6rem 1.6rem;
+  }
+    
+  .score h1 {
+        height: inherit;
+        font-size: 0.7rem;
+        padding: 0;
+  }
+    
+  .score p {
+        font-size: 2.8rem;
+  }
+
+
+    /* GAME */
+
+  .game {    
+      border: 1px dotted rgba(20,21,57,1); 
+      margin-top: 7rem;
+  }
+
+  .top {
+      margin-top: 3rem;
+  }
+
+
+  .box {
+      height: 8rem;
+      width: 8.3rem;     
+  }
+
+  .box img {  
+      width: 2.6rem;
+  }
+
+  /* ACTIVE */
+
+
+  .active {
+      flex-wrap: wrap;
+  }
+
+  .decide {
+      width: 50%;
+  }
+
+  .decide h2 {
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+  }
+
+  .result{
+      margin-top: 5rem;
+      width: 100%;
+  }
+
+  .result div {
+      margin: auto 0;
+  }
+
+  .result h2 {
+      font-size: 4rem;
+      margin: 0 0 2rem 0;
+  }
+
+  .result  button {
+      color: hsl(237, 49%, 15%);
+      width: 60%;
+      padding: 1rem 2rem;
+      letter-spacing: 0.1rem;
+      font-weight: 700;
+  }
+
+
+  .rule {
+    padding-bottom: 10rem;
+      text-align: center;
+      margin: 2rem 2rem;
+  }
+
+  .rule button {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      width: 50%;
+
+  }
+
+  .rule-view {
+      left: 10%;
+      top: 28%;
+  }
+
+
+
+
+}
