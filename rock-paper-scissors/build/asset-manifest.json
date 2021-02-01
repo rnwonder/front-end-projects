@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/font-end-projects/static/css/main.fc7463c6.chunk.css",
-    "main.js": "/font-end-projects/static/js/main.a6e8f6b6.chunk.js",
-    "main.js.map": "/font-end-projects/static/js/main.a6e8f6b6.chunk.js.map",
-    "runtime-main.js": "/font-end-projects/static/js/runtime-main.c5ab65f3.js",
-    "runtime-main.js.map": "/font-end-projects/static/js/runtime-main.c5ab65f3.js.map",
-    "static/js/2.e161edda.chunk.js": "/font-end-projects/static/js/2.e161edda.chunk.js",
-    "static/js/2.e161edda.chunk.js.map": "/font-end-projects/static/js/2.e161edda.chunk.js.map",
-    "index.html": "/font-end-projects/index.html",
-    "static/css/main.fc7463c6.chunk.css.map": "/font-end-projects/static/css/main.fc7463c6.chunk.css.map",
-    "static/js/2.e161edda.chunk.js.LICENSE.txt": "/font-end-projects/static/js/2.e161edda.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/font-end-projects/static/media/bg-triangle.c0c30b56.svg",
-    "static/media/icon-close.bde602ec.svg": "/font-end-projects/static/media/icon-close.bde602ec.svg",
-    "static/media/icon-paper.8b57a6b1.svg": "/font-end-projects/static/media/icon-paper.8b57a6b1.svg",
-    "static/media/icon-rock.476e90a9.svg": "/font-end-projects/static/media/icon-rock.476e90a9.svg",
-    "static/media/icon-scissors.3b1a5d7e.svg": "/font-end-projects/static/media/icon-scissors.3b1a5d7e.svg",
-    "static/media/image-rules.258b753f.svg": "/font-end-projects/static/media/image-rules.258b753f.svg"
+    "main.css": "./static/css/main.10b6ccd5.chunk.css",
+    "main.js": "./static/js/main.a6e8f6b6.chunk.js",
+    "main.js.map": "./static/js/main.a6e8f6b6.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.aa1ded95.js",
+    "runtime-main.js.map": "./static/js/runtime-main.aa1ded95.js.map",
+    "static/js/2.e161edda.chunk.js": "./static/js/2.e161edda.chunk.js",
+    "static/js/2.e161edda.chunk.js.map": "./static/js/2.e161edda.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.10b6ccd5.chunk.css.map": "./static/css/main.10b6ccd5.chunk.css.map",
+    "static/js/2.e161edda.chunk.js.LICENSE.txt": "./static/js/2.e161edda.chunk.js.LICENSE.txt",
+    "static/media/App.css": "./static/media/bg-triangle.c0c30b56.svg",
+    "static/media/icon-close.bde602ec.svg": "./static/media/icon-close.bde602ec.svg",
+    "static/media/icon-paper.8b57a6b1.svg": "./static/media/icon-paper.8b57a6b1.svg",
+    "static/media/icon-rock.476e90a9.svg": "./static/media/icon-rock.476e90a9.svg",
+    "static/media/icon-scissors.3b1a5d7e.svg": "./static/media/icon-scissors.3b1a5d7e.svg",
+    "static/media/image-rules.258b753f.svg": "./static/media/image-rules.258b753f.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c5ab65f3.js",
+    "static/js/runtime-main.aa1ded95.js",
     "static/js/2.e161edda.chunk.js",
-    "static/css/main.fc7463c6.chunk.css",
+    "static/css/main.10b6ccd5.chunk.css",
     "static/js/main.a6e8f6b6.chunk.js"
   ]
 }
