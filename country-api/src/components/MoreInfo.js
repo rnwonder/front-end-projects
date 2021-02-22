@@ -11,7 +11,8 @@ const MoreInfo = ({match}) => {
         "population": '',
         "currencies": [{name: ''}],
         "languages": [{name: ''}],
-        "borders": []
+        "borders": [],
+        "flag": ''
     })
     
 
@@ -22,11 +23,11 @@ const MoreInfo = ({match}) => {
     
 
     const getInfo = async () => {
-        const res = await fetch(`https://restcountries.eu/rest/v2/name/${match.params.name}`)
+        const res = await fetch(`https://restcountries.eu/rest/v2/alpha/${match.params.name}`)
 
         const infoData = await res.json()
 
-        setInfo(infoData[0]) 
+        setInfo(infoData) 
 
     }
 

@@ -125,7 +125,7 @@ const ListContainer = () => {
             
             <div className="card-container">
                 {countriesData && countriesData.length> 0? countriesData.map(country => (
-                    <Link to={`/more/${country.name}`}>
+                    <Link to={`/more/${country.alpha3Code}`}>
                         <Card key={country.numericCode} name={country.name} population={country.population} region={country.region} capital={country.capital} flag={country.flag} />
                     </Link>
                 )): <p id="status" className="not-found">{status}</p>}
