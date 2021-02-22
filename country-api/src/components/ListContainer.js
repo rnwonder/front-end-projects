@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Card'
 import {Link} from 'react-router-dom'
+import { Helmet } from 'react-helmet';
 
 const ListContainer = () => {
 
@@ -102,6 +103,13 @@ const ListContainer = () => {
 
     return (
         <section className="list pad">
+
+            <Helmet htmlAttributes>
+                <html lang="en" />
+                <title>Countries - Rnwonder's Country List</title>
+                <meta name="description" content="List of all the countries in the world" />
+            </Helmet>
+            
             <form action="">
                 <input onChange={handleSearchInput} type="text" name="search" id="search" value={searchInput} placeholder="Search for a country"/>
 

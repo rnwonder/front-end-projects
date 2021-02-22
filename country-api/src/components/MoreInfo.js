@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react';
 import {IsoContext} from './IsoContext'
 import {Link} from 'react-router-dom'
+import { Helmet } from 'react-helmet';
 
 
 const MoreInfo = ({match}) => {
@@ -36,6 +37,12 @@ const MoreInfo = ({match}) => {
 
     return (
         <section className="more-info pad">
+            <Helmet htmlAttributes>
+                <html lang="en" />
+                <title>{`${info.name} - Rnwonder's Country List`}</title>
+                <meta name="description" content={`More information on ${info.name}`} />
+            </Helmet>
+
             <div className="button">
                 <Link to='/'>
                     <button> <i className="fas fa-long-arrow-alt-left"></i> Back</button>
