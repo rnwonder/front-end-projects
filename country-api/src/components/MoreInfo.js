@@ -13,7 +13,8 @@ const MoreInfo = ({match}) => {
         "currencies": [{name: ''}],
         "languages": [{name: ''}],
         "borders": [],
-        "flag": ''
+        "name": ''
+
     })
     
 
