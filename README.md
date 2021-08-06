@@ -4,7 +4,7 @@
 
 [Check Them Out](https://dev.to/frontendmentor/16-front-end-projects-with-designs-to-help-improve-your-coding-skills-5ajl)
 
-### Projects with HTML, CSS and JS
+### Projects with HTML, CSS and JAVASCRIPT
 [Bookmark Page](https://rnwonder.github.io/front-end-projects/bookmark-landing-page-master/index.html)
 ###
 [Manage](https://rnwonder.github.io/front-end-projects/manage-landing-page-master/index.html)
